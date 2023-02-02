@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to left, #00f, #099, #0ff);
+}
+.overall {
+    width: 400px;
+    margin: 30px;
+    padding: 30px;
+}
+.overall a{
+    padding: 30px;
+    color: #000;
+    text-decoration: none;
+    /* background-color: #fff; */
+}
+.overall a:hover{
+    color: #00f;
+}

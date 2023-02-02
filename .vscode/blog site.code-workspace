@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../model"
+		},
+		{
+			"path": "../search"
+		},
+		{
+			"path": "../uploads"
+		}
+	]
+}

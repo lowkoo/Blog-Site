@@ -1,0 +1,63 @@
+<?php
+
+// $files = filter_input(INPUT_POST, 'files');
+    $all = $title . $content . $date_post;
+
+    // $title = $_POST['title'];
+    // $content = $_POST['content'];
+    // $date_post = $_POST['date_posted'];
+    $files = $_FILES['file'];
+    $name = $files['name'];
+    $temp_name = $files['tmp_name'];
+    
+    if($title == null || $content == null || $date_post == null || $name == null){
+        $message = 'please enter something';
+        include('uploading_post.php');
+    }else{
+        $destination = '../uploads/' . $name;
+        $success = move_uploaded_file($temp_name, $destination);
+        inserting_uploads($title, $content, $date_post, $name);
+        include('searchpage.php');
+
+    }
+    break;
+    case 'search_data':
+        // $search = mysqli_real_escape_string($conn, $_POST['search']);
+         $search = filter_input(INPUT_POST, 'search');
+        // $query = "SELECT * FROM post WHERE p_topic LIKE '%$search%' OR p_content LIKE '%$search%'";
+        // $con = mysqli_query($conn, $query);
+        $search_result = search_result($search);
+        $srch = mysqli_num_rows($con);
+        // $search_result = '';
+        if ($search == null){
+            $message = 'Empty field';
+            include('searchpage.php');
+        }
+        else if($search != $search_result){
+            $message = 'we can\' find your search';
+            include('searchpage.php');
+        } 
+        else {
+            $search_result = search_result($search );
+            include('search_result_page.php');
+        }
+        // if($srch > 0){
+        //     include('search_result_page.php');
+        // }else{
+        //     $message = 'we can\' find your search';
+        //     include('searchpage.php');
+        //}
+        break;
+
+    case 'single_search_result';
+        $p_id = filter_input(INPUT_GET, 'p_id', FILTER_VALIDATE_INT);
+        if ($p_id == null || $p_id == false){
+            $message = 'Invalid post ID';
+            include('searchpage.php');
+        } else {
+            $single_search_result = single_search_result($p_id);
+            include('single_post_details.php');
+        }
+        break;
+
+}

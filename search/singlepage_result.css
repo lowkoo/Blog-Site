@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #0ff, #00f, rgb(190, 33, 135));
+}
+.all{
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.logo{
+    width: 40%;
+    display: flex;
+
+}
+.logo h3{
+    color: rgb(38, 38, 124);
+    font-size: 25px;
+    cursor: default;
+    font-style: oblique;
+}
+.iner{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+
+}
+.iner ul{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    justify-content: end;
+
+}
+.iner ul li{
+    list-style: none;
+    padding: 5px;
+
+}
+.iner ul li a{
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    border-bottom-right-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #00f;
+
+}
+.iner ul li a:hover{
+    background-color: #0ff;
+
+}
+.overall{
+    width: 100%;
+    margin: 10px;
+
+}
+.overall h1{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.overall img{
+    width: 300px;
+    border-radius: 5px;
+
+}
+.overall p{
+    text-indent: 10px;
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+}
+.overall h2{
+    font-size: 25px;
+    color: #545;
+    text-align: center;
+}
+.overall footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 30px;
+    color: #00f;
+}

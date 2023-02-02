@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #0ff, #00f, #00056f);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-attachment: fixed;
+    background-size: cover;
+}
+.all{
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.logo{
+    width: 40%;
+    display: flex;
+
+}
+.logo h3{
+    color: rgb(38, 38, 124);
+    font-size: 25px;
+    cursor: default;
+    font-style: oblique;
+}
+.iner{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+
+}
+.iner ul{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    justify-content: end;
+
+}
+.iner ul li{
+    list-style: none;
+    padding: 5px;
+
+}
+.iner ul li a{
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    border-bottom-right-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #00f;
+
+}
+.iner ul li a:hover{
+    background-color: #0ff;
+
+}
+
+p {
+    color: #f00;
+    padding: 20px;
+}
+form{
+    width: 400px;
+    margin: 150px auto;
+    /* margin-left: 180px; */
+}
+h2{
+    color: #fff;
+    width: 200px;
+    font-size: 30px;
+    margin: 30px auto;
+
+}
+.none {
+    padding-left: 50px;
+    width: 100%;
+    display: flex;
+
+}
+.none a{
+
+}
+.none a input{
+    padding: 5px;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.sub{
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    margin-left: 50px;
+}
+.sub [type = none]{
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000088;
+}
+.sub [type = submit]{
+    width: 50%;
+    /* position: relative; */
+    /* overflow: hidden; */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000088;
+    background-color: #0ff;
+}
+/* .sub input::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 10px;
+    transition: 0.3s;
+    
+
+}
+.sub input:hover::before{
+    width: 110%;
+    background-color: #00056f;
+} */
+.sub input:hover{
+    background-color: #00054f;
+    color: #fff;
+}
+
+
+
+
+

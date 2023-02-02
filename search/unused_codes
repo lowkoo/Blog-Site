@@ -1,0 +1,20 @@
+   <h2>Search Result</h2>
+    <?php foreach( $search_result as $result) :?>
+       <a href=".?action=single_search_result&amp;p_id=<?php echo $result['p_id'];?>">
+        <h3><?php echo $result['p_topic']; ?></h3></a>
+
+     <?php endforeach; ?>
+     <a href=".?action=single_search_result&amp;p_id=<?php echo $res['p_id']; ?>">
+        <?php
+            while($res = mysqli_fetch_assoc($con)){
+
+}
+            ?>
+            <?php 
+            if(isset($res)){
+            echo  $res['p_topic']; 
+
+            }
+            
+            ?>
+             </a>
